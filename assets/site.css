@@ -15,3 +15,74 @@
 .media-layout img{width:100%;border-radius:5px}
 .media-layout figcaption{color:var(--muted);font-size:13px;margin-top:12px}
 nav [aria-current=page]{color:var(--gold)}
+
+
+/* Featured support button — always positioned at the far right of the header. */
+header { gap: 16px; }
+header > .brand { flex-shrink: 0; }
+header > nav { margin-left: auto; gap: clamp(9px, 1.2vw, 22px); }
+header > .coffee-link {
+  flex-shrink: 0;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  padding: 14px 18px;
+  border-radius: 8px;
+  border: 2px solid #ffda87;
+  background: linear-gradient(135deg, #ffe49f, #edbb65);
+  color: #172020;
+  box-shadow: 0 4px 18px rgba(237,187,101,.28);
+  font: 800 13px 'DM Sans', Arial, sans-serif;
+  white-space: nowrap;
+  text-decoration: none;
+  transition: transform .15s ease, box-shadow .15s ease, filter .15s ease;
+}
+header > .coffee-link:hover {
+  color: #172020;
+  filter: brightness(1.06);
+  transform: translateY(-2px);
+  box-shadow: 0 6px 24px rgba(237,187,101,.44);
+}
+header > .coffee-link:focus-visible { outline: 3px solid white; outline-offset: 4px; }
+header > .coffee-link .coffee-icon { font-size: 18px; line-height: 1; }
+
+@media (max-width: 1230px) {
+  header { position: relative; }
+  header > #menu {
+    display: block;
+    margin-left: auto;
+    color: var(--text);
+    border: 1px solid var(--line);
+    background: none;
+    font-size: 24px;
+    padding: 4px 12px;
+  }
+  header > nav {
+    display: none;
+    position: absolute;
+    left: 0;
+    top: 104px;
+    z-index: 20;
+    width: 100%;
+    margin: 0;
+    padding: 20px 5%;
+    background: var(--panel);
+    box-shadow: 0 15px 24px rgba(0,0,0,.25);
+  }
+  header > nav.open { display: flex; flex-direction: column; align-items: stretch; gap: 8px; }
+  header > nav a { padding: 10px 8px; }
+}
+@media (max-width: 700px) {
+  header > nav { top: 85px; }
+  header > .coffee-link { padding: 10px 12px; }
+}
+@media (max-width: 520px) {
+  header { gap: 10px; }
+  header > .coffee-link { padding: 10px 12px; }
+  header > .coffee-link .coffee-label { display: none; }
+}
+@media (prefers-reduced-motion: reduce) {
+  header > .coffee-link { transition: none; }
+  header > .coffee-link:hover { transform: none; }
+}
