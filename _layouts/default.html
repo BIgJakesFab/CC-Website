@@ -16,7 +16,6 @@
   <a class="brand" href="{{ '/' | relative_url }}"><img src="{{ '/assets/crafted-creations-crest.webp' | relative_url }}" alt="Crafted Creations logo"><span>CRAFTED<br>CREATIONS<small>DESIGN · CREATE · BUILD</small></span></a>
   <button id="menu" aria-label="Open navigation" aria-expanded="false">☰</button>
   <nav id="nav">
-    <a href="https://buymeacoffee.com/craftedcreations2023" target="_blank" rel="noopener" class="coffee-link">☕ Buy Me a Coffee</a>
     <a href="{{ '/#work' | relative_url }}">The work</a>
     <a href="{{ '/saw-blades.html' | relative_url }}"{% if page.section == 'saw' %} aria-current="page"{% endif %}>Saw Blades</a>
     <a href="{{ '/wood-projects.html' | relative_url }}"{% if page.section == 'wood' %} aria-current="page"{% endif %}>Wood Projects</a>
@@ -24,6 +23,9 @@
     <a href="{{ '/#watch' | relative_url }}">In the workshop</a>
     <a href="{{ '/#contact' | relative_url }}" class="nav-cta">Let's make something ↗</a>
   </nav>
+  <a class="coffee-link" href="https://buymeacoffee.com/craftedcreations2023" target="_blank" rel="noopener" aria-label="Support Crafted Creations on Buy Me a Coffee">
+    <span class="coffee-icon" aria-hidden="true">☕</span><span class="coffee-label">Buy Me a Coffee</span>
+  </a>
 </header>
 {{ content }}
 <footer>
