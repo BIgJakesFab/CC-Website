@@ -1,11 +1,10 @@
-<!doctype html><html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="description" content="Crafted Creations: custom laser engraving, CNC projects, 3D printing and real workshop inspiration. Design. Create. Build."><meta name="theme-color" content="#111719"><title>Saw Blades | Crafted Creations</title><link rel="icon" href="assets/crafted-creations-crest.webp"><link rel="stylesheet" href="assets/site.css"></head><body>
-<header><a class="brand" href="index.html"><img src="assets/crafted-creations-crest.webp" alt="Crafted Creations logo"><span>CRAFTED<br>CREATIONS<small>DESIGN · CREATE · BUILD</small></span></a><button id="menu" aria-label="Open navigation" aria-expanded="false">☰</button><nav id="nav">
-  <a href="index.html#work">The work</a>
-  <a href="saw-blades.html" aria-current="page">Saw Blades</a>
-  <a href="wood-projects.html">Wood Projects</a>
-  <a href="index.html#capabilities">What we do</a>
-  <a href="index.html#watch">In the workshop</a>
-  <a href="index.html#contact" class="nav-cta">Let’s make something ↗</a></nav></header><main class="section"><p><a class="text-link" href="index.html#work">← All creations</a></p><h1>Saw Blades</h1>
+---
+layout: default
+title: Saw Blades
+section: saw
+description: Custom engraved saw blade clocks and saw blade projects from the Crafted Creations workshop.
+---
+<main class="section"><p><a class="text-link" href="index.html#work">← All creations</a></p><h1>Saw Blades</h1>
 <div class="project-grid media-layout">
 <article><h2>From saw blade to clock</h2><p class="intro">See an old saw blade get a second life as workshop wall art.</p>
 <figure><img src="assets/saw-blade.jpg" alt="From saw blade to clock — YouTube Short thumbnail" width="480" height="360"><figcaption>Image from the Crafted Creations Short.</figcaption></figure>
@@ -15,6 +14,3 @@
 
 <iframe class="media-player" width="340" height="604" loading="lazy" src="https://www.youtube-nocookie.com/embed/CDZrjmmlLSw" title="From saw blade to clock — Crafted Creations YouTube Short" allow="encrypted-media; picture-in-picture; web-share" allowfullscreen></iframe></div>
 </main>
-<footer><a class="brand" href="index.html"><img src="assets/crafted-creations-crest.webp" alt=""><span>CRAFTED CREATIONS<small>DESIGN · CREATE · BUILD</small></span></a><p>A little ingenuity goes a long way.</p><div><a href="https://www.youtube.com/@craftedcreations2023/shorts" target="_blank" rel="noopener">YouTube ↗</a>
-  <a href="https://www.facebook.com/CraftedCreations2023" target="_blank" rel="noopener">Facebook ↗</a></div><small>© <span id="year"></span> Crafted Creations</small></footer><script>
-const menu=document.querySelector('#menu'),nav=document.querySelector('#nav');menu.addEventListener('click',()=>{const open=nav.classList.toggle('open');menu.setAttribute('aria-expanded',open);menu.setAttribute('aria-label',open?'Close navigation':'Open navigation')});nav.querySelectorAll('a').forEach(a=>a.addEventListener('click',()=>{nav.classList.remove('open');menu.setAttribute('aria-expanded','false')}));document.querySelector('#year').textContent=new Date().getFullYear();</script></body></html>
