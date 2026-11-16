@@ -1,0 +1,20 @@
+<!doctype html><html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="description" content="Crafted Creations: custom laser engraving, CNC projects, 3D printing and real workshop inspiration. Design. Create. Build."><meta name="theme-color" content="#111719"><title>Wood Projects | Crafted Creations</title><link rel="icon" href="assets/crafted-creations-crest.webp"><link rel="stylesheet" href="assets/site.css"></head><body>
+<header><a class="brand" href="index.html"><img src="assets/crafted-creations-crest.webp" alt="Crafted Creations logo"><span>CRAFTED<br>CREATIONS<small>DESIGN · CREATE · BUILD</small></span></a><button id="menu" aria-label="Open navigation" aria-expanded="false">☰</button><nav id="nav">
+  <a href="index.html#work">The work</a>
+  <a href="saw-blades.html">Saw Blades</a>
+  <a href="wood-projects.html" aria-current="page">Wood Projects</a>
+  <a href="index.html#capabilities">What we do</a>
+  <a href="index.html#watch">In the workshop</a>
+  <a href="index.html#contact" class="nav-cta">Let’s make something ↗</a></nav></header><main class="section"><p><a class="text-link" href="index.html#work">← All creations</a></p><h1>Wood Projects</h1>
+<div class="project-grid media-layout">
+<article><h2>Lacewood turkey pot call</h2><p class="intro">Take a look at a lacewood turkey pot call from the shop.</p>
+<figure><img src="assets/lacewood.jpg" alt="Lacewood turkey pot call — YouTube Short thumbnail" width="480" height="360"><figcaption>Image from the Crafted Creations Short.</figcaption></figure>
+<div class="actions"><a class="button gold" href="https://www.youtube.com/shorts/uaytdP5CRSo">Watch on YouTube ↗</a>
+  <a class="text-link" href="https://www.facebook.com/CraftedCreations2023/photos/">Facebook photos ↗</a></div>
+</article>
+
+<iframe class="media-player" width="340" height="604" loading="lazy" src="https://www.youtube-nocookie.com/embed/uaytdP5CRSo" title="Lacewood turkey pot call — Crafted Creations YouTube Short" allow="encrypted-media; picture-in-picture; web-share" allowfullscreen></iframe></div>
+</main>
+<footer><a class="brand" href="index.html"><img src="assets/crafted-creations-crest.webp" alt=""><span>CRAFTED CREATIONS<small>DESIGN · CREATE · BUILD</small></span></a><p>A little ingenuity goes a long way.</p><div><a href="https://www.youtube.com/@craftedcreations2023/shorts" target="_blank" rel="noopener">YouTube ↗</a>
+  <a href="https://www.facebook.com/CraftedCreations2023" target="_blank" rel="noopener">Facebook ↗</a></div><small>© <span id="year"></span> Crafted Creations</small></footer><script>
+const menu=document.querySelector('#menu'),nav=document.querySelector('#nav');menu.addEventListener('click',()=>{const open=nav.classList.toggle('open');menu.setAttribute('aria-expanded',open);menu.setAttribute('aria-label',open?'Close navigation':'Open navigation')});nav.querySelectorAll('a').forEach(a=>a.addEventListener('click',()=>{nav.classList.remove('open');menu.setAttribute('aria-expanded','false')}));document.querySelector('#year').textContent=new Date().getFullYear();</script></body></html>
