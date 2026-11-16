@@ -1,0 +1,8 @@
+title: Crafted Creations
+description: A little imagination. A lot of making.
+url: "https://bigjakesfab.github.io"
+baseurl: "/CC-Website"
+theme: jekyll-theme-midnight
+markdown: kramdown
+exclude:
+  - README.md
