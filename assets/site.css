@@ -86,3 +86,11 @@ header > .coffee-link .coffee-icon { font-size: 18px; line-height: 1; }
   header > .coffee-link { transition: none; }
   header > .coffee-link:hover { transform: none; }
 }
+
+
+.blade-gallery { margin: 2rem 0 3rem; }
+.blade-gallery h2 { margin-bottom: 1rem; }
+.blade-gallery figure { margin: 0; min-width: 0; }
+.blade-gallery figure a { display: block; background: var(--bg); }
+.blade-gallery img { display: block; width: 100%; height: auto; aspect-ratio: 4 / 3; object-fit: contain; }
+.blade-gallery figcaption { padding: .75rem 1rem; }
